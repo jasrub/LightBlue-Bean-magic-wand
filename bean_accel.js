@@ -1,19 +1,3 @@
-/*jslint node: true */
-
-/* 
- * Requests the accelerometer, temperature, and sets the color randomly evry second.
- * This requires no specific sketch on the Arduino. All of this is just talking to the bean's radio. 
- */
-
- /*********************************************************************************************************************************************
-*|   0   |   1   |   2  |   3   |    4   |    5   |    6   |    7  |    8  |    9    |    10   |   11  |   12  |   13    |    14   |   15  |*
-*|   *   |   *   |  *   |   *   |  * * * |      * |* * *   |*      | *     |* * * *  |  * * * *|    *  |*      |  *      |      *  |      *|*
-*|  ***  |   *   | *    |    *  | * *    |     *  |   * *  | *     |* * * *|      *  |  *      |* * * *|*      |* * *    |    * * *|      *|*
-*| * * * | * * * |******|****** |*   *   |*   *   |  *   * |  *   *| *    *|      *  |  *      |*   *  |*   *  |  *      |      *  |  *   *|*
-*|   *   |  ***  | *    |    *  |     *  | * *    | *      |   * * |      *|    * * *|* * *    |*      |* * * *|  *      |      *  |* * * *|*
-*|   *   |   *   |  *   |   *   |      * |  * * * |*       |* * *  |      *|      *  |  *      |*      |    *  |  * * * *|* * * *  |  *    |*
-*********************************************************************************************************************************************
-*/
 
 "use strict";
 
@@ -24,7 +8,6 @@ var mpg321 = require('mpg321');
 // Lights
 
 var noble = require('noble');
-//var pizza = require('./pizza');
 
 
 
@@ -182,16 +165,6 @@ Bean.discover(function(bean){
       updateHighSpeedCount(removedReading, currReading)
       wakeUp();
       checkMoveStart();
-
-
-      // if (highSpeedShakeCount>=5 ){
-      //   console.log("shaking");
-      //   if (!playing) {
-      //     player.play(file);
-      //     playing = true
-      //     toggleLights() 
-      //   }
-      // }
     }
   });
 

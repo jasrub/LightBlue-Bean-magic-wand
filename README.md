@@ -8,3 +8,6 @@ This is a Node.js server that connects to a [LightBlue Bean](https://punchthroug
 
 With every move, a new action happens:
 playing music from the computer speakers or turning on the nrf51UART connected lights.
+
+To run the server run:  
+`node bean_accle.js`
